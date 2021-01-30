@@ -25,27 +25,17 @@ public class RatMovement : MonoBehaviour
         boxPosition = Vector3.zero;
 
         holePositions = new List<Vector3>();
-        holePositions.Add(new Vector3(-200, 0, -250));
-        holePositions.Add(new Vector3(-100, 0, -250));
-        holePositions.Add(new Vector3(-0, 0, -250));
-        holePositions.Add(new Vector3(100, 0, -250));
-        holePositions.Add(new Vector3(200, 0, -250));
-        holePositions.Add(new Vector3(250, 0, -200));
-        holePositions.Add(new Vector3(250, 0, -100));
-        holePositions.Add(new Vector3(250, 0, 0));
-        holePositions.Add(new Vector3(250, 0, 100));
-        holePositions.Add(new Vector3(250, 0, 200));
-        holePositions.Add(new Vector3(200, 0, 250));
-        holePositions.Add(new Vector3(100, 0, 250));
-        holePositions.Add(new Vector3(0, 0, 250));
-        holePositions.Add(new Vector3(-100, 0, 250));
-        holePositions.Add(new Vector3(-200, 0, 250));
-        holePositions.Add(new Vector3(-250, 0, 200));
-        holePositions.Add(new Vector3(-250, 0, 100));
         holePositions.Add(new Vector3(-250, 0, 0));
-        holePositions.Add(new Vector3(-250, 0, -100));
-        holePositions.Add(new Vector3(-250, 0, -200));
-
+        holePositions.Add(new Vector3(-250, 0, 100));
+        holePositions.Add(new Vector3(-250, 0, 200));
+        holePositions.Add(new Vector3(-200, 0, 250));
+        holePositions.Add(new Vector3(-100, 0, 250));
+        holePositions.Add(new Vector3(0, 0, 250));
+        holePositions.Add(new Vector3(100, 0, 250));
+        holePositions.Add(new Vector3(200, 0, 250));
+        holePositions.Add(new Vector3(250, 0, 200));
+        holePositions.Add(new Vector3(250, 0, 100));
+        holePositions.Add(new Vector3(250, 0, 0));
 
         gameManager = FindObjectOfType<InGameManager>();
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class BoxContainer : MonoBehaviour
 {
     public List<GameObject> marbles;
-    private List<int> possibleRatIDs = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
+    private List<int> possibleRatIDs = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     public List<int> ratIDs = new List<int>();
 
     // Start is called before the first frame update
