@@ -272,15 +272,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -254.91551
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 225.46982
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -474,15 +474,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -204.91551
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.46982
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -676,15 +676,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -204.91551
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 575.46985
+      value: 250.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -878,15 +878,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.08449
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 225.46982
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -943,7 +943,6 @@ GameObject:
   - component: {fileID: 198601031}
   - component: {fileID: 198601030}
   - component: {fileID: 198601029}
-  - component: {fileID: 198601032}
   m_Layer: 7
   m_Name: Cube (6)
   m_TagString: Hidy Hole
@@ -1027,22 +1026,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198601027}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &198601032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198601027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &199153316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1038,6 @@ GameObject:
   - component: {fileID: 199153320}
   - component: {fileID: 199153319}
   - component: {fileID: 199153318}
-  - component: {fileID: 199153321}
   m_Layer: 7
   m_Name: Cube (3)
   m_TagString: Hidy Hole
@@ -1139,22 +1121,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199153316}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &199153321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199153316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &251821660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,15 +1415,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 95.08448
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 575.46985
+      value: 250.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1514,7 +1480,6 @@ GameObject:
   - component: {fileID: 344303707}
   - component: {fileID: 344303706}
   - component: {fileID: 344303705}
-  - component: {fileID: 344303708}
   m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Hidy Hole
@@ -1598,22 +1563,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344303703}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &344303708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344303703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &426868650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +1575,6 @@ GameObject:
   - component: {fileID: 426868654}
   - component: {fileID: 426868653}
   - component: {fileID: 426868652}
-  - component: {fileID: 426868655}
   m_Layer: 7
   m_Name: Cube (5)
   m_TagString: Hidy Hole
@@ -1710,22 +1658,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426868650}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &426868655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426868650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &449599312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1670,6 @@ GameObject:
   - component: {fileID: 449599316}
   - component: {fileID: 449599315}
   - component: {fileID: 449599314}
-  - component: {fileID: 449599317}
   m_Layer: 7
   m_Name: Cube (14)
   m_TagString: Hidy Hole
@@ -1822,22 +1753,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449599312}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &449599317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449599312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1001 &478770517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1987,15 +1902,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 195.08449
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 575.46985
+      value: 250.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2189,15 +2104,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -104.91552
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 575.46985
+      value: 250.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2391,15 +2306,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -104.91552
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.46982
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2593,15 +2508,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 195.08449
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.46982
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2658,7 +2573,6 @@ GameObject:
   - component: {fileID: 679651773}
   - component: {fileID: 679651772}
   - component: {fileID: 679651771}
-  - component: {fileID: 679651774}
   m_Layer: 7
   m_Name: Cube (8)
   m_TagString: Hidy Hole
@@ -2742,22 +2656,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679651769}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &679651774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679651769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &684539500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,7 +2847,6 @@ GameObject:
   - component: {fileID: 827246471}
   - component: {fileID: 827246470}
   - component: {fileID: 827246469}
-  - component: {fileID: 827246472}
   m_Layer: 7
   m_Name: Cube (10)
   m_TagString: Hidy Hole
@@ -3033,22 +2930,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827246467}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &827246472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827246467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &837486569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,7 +2942,6 @@ GameObject:
   - component: {fileID: 837486573}
   - component: {fileID: 837486572}
   - component: {fileID: 837486571}
-  - component: {fileID: 837486574}
   m_Layer: 7
   m_Name: Cube (4)
   m_TagString: Hidy Hole
@@ -3145,22 +3025,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837486569}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &837486574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837486569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &921571324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3269,7 +3133,6 @@ GameObject:
   - component: {fileID: 966950953}
   - component: {fileID: 966950952}
   - component: {fileID: 966950951}
-  - component: {fileID: 966950954}
   m_Layer: 7
   m_Name: Cube (17)
   m_TagString: Hidy Hole
@@ -3353,22 +3216,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966950949}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &966950954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966950949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &996657502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,15 +3461,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.08449
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 125.46982
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3679,7 +3526,6 @@ GameObject:
   - component: {fileID: 1012938852}
   - component: {fileID: 1012938851}
   - component: {fileID: 1012938850}
-  - component: {fileID: 1012938853}
   m_Layer: 7
   m_Name: Cube (11)
   m_TagString: Hidy Hole
@@ -3763,22 +3609,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012938848}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1012938853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012938848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1001 &1020832673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3928,15 +3758,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -254.91551
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 325.46982
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4005,7 +3835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035118144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9155164, y: 208.39995, z: -325.46982}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 71946702}
@@ -4043,7 +3873,6 @@ GameObject:
   - component: {fileID: 1050172223}
   - component: {fileID: 1050172222}
   - component: {fileID: 1050172221}
-  - component: {fileID: 1050172224}
   m_Layer: 7
   m_Name: Cube (9)
   m_TagString: Hidy Hole
@@ -4127,22 +3956,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050172219}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1050172224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050172219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &1071281714
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,15 +4198,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.08449
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 525.46985
+      value: 200.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4450,7 +4263,6 @@ GameObject:
   - component: {fileID: 1186617573}
   - component: {fileID: 1186617572}
   - component: {fileID: 1186617571}
-  - component: {fileID: 1186617574}
   m_Layer: 7
   m_Name: Cube (18)
   m_TagString: Hidy Hole
@@ -4534,22 +4346,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186617569}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1186617574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186617569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &1193921546
 GameObject:
   m_ObjectHideFlags: 0
@@ -4562,7 +4358,6 @@ GameObject:
   - component: {fileID: 1193921550}
   - component: {fileID: 1193921549}
   - component: {fileID: 1193921548}
-  - component: {fileID: 1193921551}
   m_Layer: 7
   m_Name: Cube (13)
   m_TagString: Hidy Hole
@@ -4646,22 +4441,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193921546}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1193921551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193921546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &1205269121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4674,7 +4453,6 @@ GameObject:
   - component: {fileID: 1205269125}
   - component: {fileID: 1205269124}
   - component: {fileID: 1205269123}
-  - component: {fileID: 1205269126}
   m_Layer: 7
   m_Name: Cube (15)
   m_TagString: Hidy Hole
@@ -4758,22 +4536,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205269121}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1205269126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205269121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1001 &1246247613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4923,15 +4685,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 95.08448
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.46982
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5125,15 +4887,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.9155164
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.46982
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5327,15 +5089,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -254.91551
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 125.46982
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5452,7 +5214,6 @@ GameObject:
   - component: {fileID: 1462118376}
   - component: {fileID: 1462118375}
   - component: {fileID: 1462118374}
-  - component: {fileID: 1462118377}
   m_Layer: 7
   m_Name: Cube (16)
   m_TagString: Hidy Hole
@@ -5536,22 +5297,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462118372}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1462118377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462118372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &1497603466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,7 +5309,6 @@ GameObject:
   - component: {fileID: 1497603470}
   - component: {fileID: 1497603469}
   - component: {fileID: 1497603468}
-  - component: {fileID: 1497603471}
   m_Layer: 7
   m_Name: Cube (12)
   m_TagString: Hidy Hole
@@ -5648,22 +5392,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497603466}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1497603471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497603466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &1628222460
 GameObject:
   m_ObjectHideFlags: 0
@@ -5676,7 +5404,6 @@ GameObject:
   - component: {fileID: 1628222464}
   - component: {fileID: 1628222463}
   - component: {fileID: 1628222462}
-  - component: {fileID: 1628222465}
   m_Layer: 7
   m_Name: Cube (7)
   m_TagString: Hidy Hole
@@ -5760,22 +5487,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628222460}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1628222465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628222460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &1631438890
 GameObject:
   m_ObjectHideFlags: 0
@@ -5788,7 +5499,6 @@ GameObject:
   - component: {fileID: 1631438894}
   - component: {fileID: 1631438893}
   - component: {fileID: 1631438892}
-  - component: {fileID: 1631438895}
   m_Layer: 7
   m_Name: Cube (19)
   m_TagString: Hidy Hole
@@ -5872,22 +5582,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631438890}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1631438895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631438890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &1881019821
 GameObject:
   m_ObjectHideFlags: 0
@@ -5935,7 +5629,6 @@ GameObject:
   - component: {fileID: 1937340675}
   - component: {fileID: 1937340674}
   - component: {fileID: 1937340673}
-  - component: {fileID: 1937340676}
   m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Hidy Hole
@@ -6019,22 +5712,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937340671}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1937340676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937340671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1001 &1942663528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6184,15 +5861,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.08449
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 425.46982
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6386,15 +6063,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -254.91551
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 425.46982
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6451,7 +6128,6 @@ GameObject:
   - component: {fileID: 1986096770}
   - component: {fileID: 1986096769}
   - component: {fileID: 1986096768}
-  - component: {fileID: 1986096771}
   m_Layer: 7
   m_Name: Cube
   m_TagString: Hidy Hole
@@ -6535,22 +6211,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986096766}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1986096771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986096766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &2019626253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6796,15 +6456,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.08449
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 325.46982
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7094,15 +6754,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -254.91551
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 525.46985
+      value: 200.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7296,15 +6956,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.9155164
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -208.39995
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 575.46985
+      value: 250.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3269009014658424382, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
       propertyPath: m_LocalRotation.w

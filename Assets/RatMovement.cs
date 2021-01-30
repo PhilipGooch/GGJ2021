@@ -7,20 +7,22 @@ public class RatMovement : MonoBehaviour
 {
     public NavMeshAgent navAgent;
     public GameObject box;
-    // Start is called before the first frame update
+
     void Start()
     {
-        //navAgent.SetDestination(box.position);
-        //navAgent.SetDestination(Vector3.zero);
+        navAgent.SetDestination(Vector3.zero);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
-        navAgent.SetDestination(Vector3.zero);
-        if ((navAgent.destination - gameObject.transform.position).magnitude < 5) { 
-            int asdf = 0;
-        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        //if(other.gameobject.tag == "Box")
+        //{
+        //    navAgent.SetDestination(Vector3(250, 0, 0));
+        //}
     }
 }
