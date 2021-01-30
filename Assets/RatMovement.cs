@@ -11,12 +11,16 @@ public class RatMovement : MonoBehaviour
     public int start;
     public int end;
     Vector3 velocity;
+    private BoxContainer box;
+    private GameObject marble;
 
     InGameManager gameManager;
     bool reachedBox = false;
 
     void Start()
     {
+        box = FindObjectOfType<BoxContainer>();
+
         boxPosition = Vector3.zero;
 
         holePositions = new List<Vector3>();
@@ -50,18 +54,37 @@ public class RatMovement : MonoBehaviour
 
     void Update()
     {
-        if (gameManager.gameStarted && !reachedBox) {
+        if (gameManager.gameStarted && !reachedBox)
+        {
             navAgent.SetDestination(Vector3.zero);
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Box")
+        if (other.gameObject.tag == "Box")
         {
-
+            TakeMarble();
             reachedBox = true;
             navAgent.SetDestination(holePositions[end]);
         }
+    }
+    void TakeMarble()
+    {
+        // if there is something in the box
+
+        if (box.marbles.Count > 0)
+        {
+            // pick a random number
+            int random = Random.Range(0, box.marbles.Count);
+
+            // set marbleID
+            marble = box.marbles[random];
+            box.marbles.RemoveAt(random);
+
+
+            Instantiate(marble, gameObject.transform);
+        }
+
     }
 }

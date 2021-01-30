@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoxContainer : MonoBehaviour
 {
-    public List<GameObject> listOfGO = new List<GameObject>();
+    public List<GameObject> marbles;
     // Start is called before the first frame update
     void Start()
     {
