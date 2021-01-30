@@ -13,7 +13,7 @@ public class InGameManager : MonoBehaviour
     public Text roundInfoText;
     public Text countdownText;
 
-    int phase = 0;
+    public int phase = 0;
 
     public List<GameObject> listOfGO = new List<GameObject>();
     // Start is called before the first frame update
@@ -77,7 +77,7 @@ public class InGameManager : MonoBehaviour
     }
     void GamePhase() {
 
-        // Debug for checking the round start code works... change this to be called after player has made choices
+        // Debug for checking the round start code works... change this to be called after rats rturn to holes
         if (currentTime > 20)
         {
             phase = 3;
@@ -85,6 +85,12 @@ public class InGameManager : MonoBehaviour
     }
 
     void PlayerSelectionPhase() {
-        roundInfoText.text = "Find the Green Marble!";
+        roundInfoText.text = "Find the INSERTCOLOURHERE Marble!";
+
+        // Debug for checking the round start code works... change this to be called after player makes choices
+        //if (currentTime > 25)
+        //{
+        //    phase = 0;
+        //}
     }
 }
