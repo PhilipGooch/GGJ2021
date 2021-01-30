@@ -236,6 +236,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &142144946
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142144941}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &148213106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
@@ -254,6 +270,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &148213111
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148213106}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &156757539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 241839170526214522, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
@@ -490,6 +522,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (4)
@@ -515,6 +551,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1670891926}
   selectedHole: {fileID: 0}
+  ignoreLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  marble: {fileID: 0}
 --- !u!1001 &341939926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -720,9 +760,16 @@ MonoBehaviour:
   roundNum: 0
   roundInfoText: {fileID: 1493292693}
   countdownText: {fileID: 243671610}
-  phase: 0
-  listOfGO:
-  - {fileID: 0}
+  livesText: {fileID: 839946790}
+  marbles:
+  - {fileID: 7054083683020022207, guid: 1800b39864c19214d83129532b84ab13, type: 3}
+  - {fileID: 7054083683020022207, guid: 283ca41da9d99484686ca02d74c4fba4, type: 3}
+  - {fileID: 7054083683020022207, guid: 33719adc3fbedd04b82b231349c94f64, type: 3}
+  - {fileID: 7054083683020022207, guid: e78df6427fb1ac146a37b006548907b1, type: 3}
+  - {fileID: 7054083683020022207, guid: a4ee4ab182b4f97458342daea2c1c5a8, type: 3}
+  - {fileID: 7054083683020022207, guid: 8da6d79de0d130f469af1903feb31cac, type: 3}
+  currentMarble: 0
+  selection: {fileID: 327870935}
 --- !u!4 &523928114
 Transform:
   m_ObjectHideFlags: 0
@@ -782,6 +829,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &664892605
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664892600}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &680716841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1131,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (5)
@@ -1155,6 +1222,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &770520304
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770520299}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &777220717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1218,6 +1301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (3)
@@ -1247,6 +1334,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &816131190
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816131185}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &816986974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
@@ -1265,6 +1368,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &816986979
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816986974}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &827499545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1328,12 +1447,95 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+--- !u!1 &839946788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 839946789}
+  - component: {fileID: 839946791}
+  - component: {fileID: 839946790}
+  m_Layer: 5
+  m_Name: LivesText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &839946789
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839946788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1298543292}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &839946790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839946788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Lives: '
+--- !u!222 &839946791
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839946788}
+  m_CullTransparentMesh: 1
 --- !u!1 &878453742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3269009014658424377, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
@@ -1607,6 +1809,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &1035562263
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035562258}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1059269913 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3269009014658424377, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
@@ -1740,6 +1958,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &1100426869
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100426864}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1175240099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1888,6 +2122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (6)
@@ -1987,6 +2225,7 @@ RectTransform:
   m_Children:
   - {fileID: 1493292692}
   - {fileID: 243671609}
+  - {fileID: 839946789}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2058,6 +2297,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (7)
@@ -2127,6 +2370,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (8)
@@ -2195,6 +2442,10 @@ PrefabInstance:
     - target: {fileID: 241839170526214522, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
@@ -2673,6 +2924,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &1648798011
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648798006}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!20 &1670891926 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7166648067876134800, guid: e1f27f94ade7b904dad78d3c9968e356, type: 3}
@@ -2696,6 +2963,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &1672468659
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672468654}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1696298876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3269009014658424377, guid: 8f63699cd94800142a245aaa6bb418eb, type: 3}
@@ -2821,6 +3104,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marble: {fileID: 0}
+--- !u!54 &1784302741
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784302736}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1799687226
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3360,10 @@ PrefabInstance:
     - target: {fileID: 241839170526214522, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
@@ -3425,6 +3728,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
       value: Hidy Hole (2)
@@ -3589,6 +3896,10 @@ PrefabInstance:
     - target: {fileID: 241839170526214522, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941927260777327164, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6087600807719762711, guid: 9ac9518edb7bdb44897a7f75034818b8, type: 3}
       propertyPath: m_Name
