@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class RatMovement : MonoBehaviour
 {
     public NavMeshAgent navAgent;
-    private List<Vector3> holePositions;
-    private Vector3 boxPosition;
+    public List<Vector3> holePositions;
+    public Vector3 boxPosition;
     public int start;
     public int end;
     Vector3 velocity;
