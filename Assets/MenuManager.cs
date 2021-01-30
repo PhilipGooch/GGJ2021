@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
 
     public void OnPlayButtonClick()
     {
-        SceneManager.LoadScene("Phil2");
+        SceneManager.LoadScene("Phil");
     }
     public void OnHelpButtonClick()
     {

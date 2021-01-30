@@ -12,6 +12,9 @@ public class RatMovement : MonoBehaviour
     public int end;
     Vector3 velocity;
 
+    InGameManager gameManager;
+    bool reachedBox = false;
+
     void Start()
     {
         boxPosition = Vector3.zero;
@@ -38,14 +41,18 @@ public class RatMovement : MonoBehaviour
         holePositions.Add(new Vector3(-250, 0, -100));
         holePositions.Add(new Vector3(-250, 0, -200));
 
-        navAgent.SetDestination(Vector3.zero);
+
+        gameManager = FindObjectOfType<InGameManager>();
+        //navAgent.SetDestination(Vector3.zero);
 
         //velocity = boxPosition - gameObject.trans
     }
 
     void Update()
     {
-        
+        if (gameManager.gameStarted && !reachedBox) {
+            navAgent.SetDestination(Vector3.zero);
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -53,7 +60,7 @@ public class RatMovement : MonoBehaviour
         if(other.gameObject.tag == "Box")
         {
 
-
+            reachedBox = true;
             navAgent.SetDestination(holePositions[end]);
         }
     }
