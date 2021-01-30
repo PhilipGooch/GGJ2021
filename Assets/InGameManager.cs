@@ -13,6 +13,7 @@ public class InGameManager : MonoBehaviour
     public int roundNum = 0;
     public Text roundInfoText;
     public Text countdownText;
+    public Text livesText;
 
     //public int phase = 0;
 
@@ -23,6 +24,7 @@ public class InGameManager : MonoBehaviour
 
     int score = 0;
     int lives = 3;
+    int marblesInRound = 1;
 
     enum PHASE {START, WAIT, GAME, SELECTION };
     PHASE phase;
@@ -60,6 +62,8 @@ public class InGameManager : MonoBehaviour
         countdownText.text = (startTime - (int)currentTime).ToString();
         roundInfoText.text = "Round Starts: ";
         roundNum++;
+        marblesInRound++;
+        livesText.text = "Lives: " + lives.ToString();
         phase = PHASE.WAIT;
         // tell the rats to go to for marbles...reachedbox = false  
     }
@@ -96,7 +100,7 @@ public class InGameManager : MonoBehaviour
 
     void PlayerSelectionPhase() {
 
-        if (currentMarble == marbles.Count)
+        if (currentMarble == marblesInRound)
         {
             phase = PHASE.START;
         }
@@ -107,18 +111,28 @@ public class InGameManager : MonoBehaviour
             GameObject selcted = selection.PlayerChoice();
             if (selcted)
             {
-
-                if (selcted.name == marbles[currentMarble].name)
+                // if the hole has a marble 
+                if (selcted.GetComponent<HoleContentsCheck>().marble)
                 {
-                    // selected right marble
-                    // do something
-                    score++;
-                    currentMarble++;
+                    // check the holes marble with the current marble
+                    if (selcted.GetComponent<HoleContentsCheck>().marble.name == marbles[currentMarble].name)
+                    {
+                        // selected right marble
+                        score++;
+                        currentMarble++;
+                    }
+                    // the hole has the wrong marble
+                    else
+                    {
+                        lives--;
+                        livesText.text = "Lives: " + lives.ToString();
+                        
+                    }
                 }
-                else
-                {
+                // the hole has no marble
+                else {
                     lives--;
-                    //wrong
+                    livesText.text = "Lives: " + lives.ToString();
                 }
             }
         }

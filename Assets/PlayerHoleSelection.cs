@@ -6,6 +6,7 @@ public class PlayerHoleSelection : MonoBehaviour
 {
     public Camera camera;
     public GameObject selectedHole;
+    public LayerMask ignoreLayer;
 
     InGameManager gameManager;
     public GameObject marble;
@@ -35,7 +36,7 @@ public class PlayerHoleSelection : MonoBehaviour
                 {
                     // check if the selected hole has a rat with the desired marble
                     marble = selectedHole.GetComponent<HoleContentsCheck>().marble;
-                    return marble;
+                    return selectedHole;
                 }
             }
         }
