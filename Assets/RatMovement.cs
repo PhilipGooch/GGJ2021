@@ -10,6 +10,7 @@ public class RatMovement : MonoBehaviour
 
     void Start()
     {
+        int f = 0;
         navAgent.SetDestination(Vector3.zero);
     }
 
