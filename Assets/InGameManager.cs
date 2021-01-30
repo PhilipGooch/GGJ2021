@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InGameManager : MonoBehaviour
 {
@@ -13,9 +14,18 @@ public class InGameManager : MonoBehaviour
     public Text roundInfoText;
     public Text countdownText;
 
-    public int phase = 0;
+    //public int phase = 0;
 
-    public List<GameObject> listOfGO = new List<GameObject>();
+    public List<GameObject> marbles = new List<GameObject>();
+
+    public int currentMarble = 0;
+    public PlayerHoleSelection selection;
+
+    int score = 0;
+    int lives = 3;
+
+    enum PHASE {START, WAIT, GAME, SELECTION };
+    PHASE phase;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,16 +38,16 @@ public class InGameManager : MonoBehaviour
         currentTime += Time.deltaTime;
 
         switch (phase) {
-            case 0:
+            case PHASE.START:
                 RoundStart();
                 break;
-            case 1:
+            case PHASE.WAIT:
                 WaitPhase();
                 break;
-            case 2:
+            case PHASE.GAME:
                 GamePhase();
                 break;
-            case 3:
+            case PHASE.SELECTION:
                 PlayerSelectionPhase();
                 break;
         }
@@ -50,7 +60,7 @@ public class InGameManager : MonoBehaviour
         countdownText.text = (startTime - (int)currentTime).ToString();
         roundInfoText.text = "Round Starts: ";
         roundNum++;
-        phase = 1;
+        phase = PHASE.WAIT;
         // tell the rats to go to for marbles...reachedbox = false  
     }
 
@@ -67,7 +77,7 @@ public class InGameManager : MonoBehaviour
             gameStarted = true;
             countdownText.text = " ";
             roundInfoText.text = "Round: " + roundNum.ToString();
-            phase = 2;
+            phase = PHASE.GAME;
         }
         else
         {
@@ -80,17 +90,42 @@ public class InGameManager : MonoBehaviour
         // Debug for checking the round start code works... change this to be called after rats rturn to holes
         if (currentTime > 20)
         {
-            phase = 3;
+            phase = PHASE.SELECTION;
         }
     }
 
     void PlayerSelectionPhase() {
-        roundInfoText.text = "Find the INSERTCOLOURHERE Marble!";
 
-        // Debug for checking the round start code works... change this to be called after player makes choices
-        //if (currentTime > 25)
-        //{
-        //    phase = 0;
-        //}
+        if (currentMarble == marbles.Count)
+        {
+            phase = PHASE.START;
+        }
+        if (lives > 0)
+        {
+            roundInfoText.text = "Find the " + marbles[currentMarble].name + " Marble!";
+
+            GameObject selcted = selection.PlayerChoice();
+            if (selcted)
+            {
+
+                if (selcted.name == marbles[currentMarble].name)
+                {
+                    // selected right marble
+                    // do something
+                    score++;
+                    currentMarble++;
+                }
+                else
+                {
+                    lives--;
+                    //wrong
+                }
+            }
+        }
+        else {
+            SceneManager.LoadScene("MenuScreen");
+        }
+
+        
     }
 }

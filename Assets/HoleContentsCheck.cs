@@ -19,7 +19,7 @@ public class HoleContentsCheck : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<RatMovement>()) {
+        if (other.gameObject.tag == "Rat") {
             rat = other.gameObject.GetComponent<RatMovement>();
             if (rat.marble != null) {
 

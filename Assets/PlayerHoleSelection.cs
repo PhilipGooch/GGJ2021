@@ -8,6 +8,7 @@ public class PlayerHoleSelection : MonoBehaviour
     public GameObject selectedHole;
 
     InGameManager gameManager;
+    public GameObject marble;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,21 +19,26 @@ public class PlayerHoleSelection : MonoBehaviour
     void Update()
     {
 
-        if (gameManager.phase == 3)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
+        
+    }
+    public GameObject PlayerChoice() {
 
-                if (Physics.Raycast(ray, out hit))
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                selectedHole = hit.collider.gameObject;
+                if (selectedHole.GetComponent<HoleContentsCheck>())
                 {
-                    selectedHole = hit.collider.gameObject;
-                    if (selectedHole.tag == "Hidy Hole") { 
-                        // check if the selected hole has a rat with the desired marble
-                    }
+                    // check if the selected hole has a rat with the desired marble
+                    marble = selectedHole.GetComponent<HoleContentsCheck>().marble;
+                    return marble;
                 }
             }
         }
+        return null;
     }
 }
