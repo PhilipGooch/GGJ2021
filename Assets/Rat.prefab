@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3269009012542288832}
   - component: {fileID: 3269009012542288835}
   - component: {fileID: 3269009012542288834}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: TailBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3269009012580968906}
   - component: {fileID: 3269009012580968901}
   - component: {fileID: 3269009012580968900}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009012645524686}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ButtJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 3269009012652227800}
   - component: {fileID: 3269009012652227803}
   - component: {fileID: 3269009012652227802}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Snout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 3269009012732737277}
   - component: {fileID: 3269009012732737276}
   - component: {fileID: 3269009012732737279}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LeftEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009012734285981}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: HaunchJointFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 3269009012845449922}
   - component: {fileID: 3269009012845449949}
   - component: {fileID: 3269009012845449948}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 3269009012905616215}
   - component: {fileID: 3269009012905616214}
   - component: {fileID: 3269009012905616209}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009012926710371}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: HaunchJointFL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 3269009013099595012}
   - component: {fileID: 3269009013099595015}
   - component: {fileID: 3269009013099595014}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009013126988968}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: HaunchJointBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 3269009013262312768}
   - component: {fileID: 3269009013262312771}
   - component: {fileID: 3269009013262312770}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Whisker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,7 +995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009013592482132}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: RightEarJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,7 +1026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009013643910318}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: NoseJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +1060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009013931992913}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: TailEndJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 3269009014058112210}
   - component: {fileID: 3269009014058112237}
   - component: {fileID: 3269009014058112236}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Whisker (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,7 +1186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009014071950201}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: HaunchJointBL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1221,7 +1221,7 @@ GameObject:
   - component: {fileID: 3269009014120123837}
   - component: {fileID: 3269009014120123836}
   - component: {fileID: 3269009014120123839}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: TailEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,7 +1316,7 @@ GameObject:
   - component: {fileID: 3269009014151902259}
   - component: {fileID: 3269009014151902258}
   - component: {fileID: 3269009014151902669}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Snout (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009014271010841}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: TailBaseJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1443,7 @@ GameObject:
   - component: {fileID: 3269009014325713883}
   - component: {fileID: 3269009014325713882}
   - component: {fileID: 3269009014325713877}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009014342007289}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LeftEarJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1569,7 +1569,7 @@ GameObject:
   - component: {fileID: 3269009014348178858}
   - component: {fileID: 3269009014348178853}
   - component: {fileID: 3269009014348178852}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1661,7 +1661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3269009014392525824}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: NeckJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1698,7 +1698,7 @@ GameObject:
   - component: {fileID: 3269009014465032089}
   - component: {fileID: 3269009014465032088}
   - component: {fileID: 3269009014465032091}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1793,7 +1793,7 @@ GameObject:
   - component: {fileID: 3269009014483182736}
   - component: {fileID: 3269009014483182739}
   - component: {fileID: 3269009014483182738}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +1888,7 @@ GameObject:
   - component: {fileID: 3269009014510267016}
   - component: {fileID: 3269009014510267019}
   - component: {fileID: 3269009014510267018}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: RightEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1983,7 +1983,7 @@ GameObject:
   - component: {fileID: 3269009014586268461}
   - component: {fileID: 3269009014586268460}
   - component: {fileID: 3269009014586268463}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2079,9 +2079,9 @@ GameObject:
   - component: {fileID: 1729431513}
   - component: {fileID: 1729431514}
   - component: {fileID: 6626148438313938578}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Rat
-  m_TagString: Untagged
+  m_TagString: Rat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2168,7 +2168,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3269009014658424377}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.79
@@ -2185,7 +2185,7 @@ GameObject:
   - component: {fileID: 3269009014658863629}
   - component: {fileID: 3269009014658863628}
   - component: {fileID: 3269009014658863631}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2280,7 +2280,7 @@ GameObject:
   - component: {fileID: 3269009014669780432}
   - component: {fileID: 3269009014669780435}
   - component: {fileID: 3269009014669780434}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Haunch (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
