@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Rat
+  - Hidy Hole
+  - Floor
+  - Wall
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -12,9 +17,9 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
+  - Hidy Holes
+  - Rat
+  - Box
   - 
   - 
   - 

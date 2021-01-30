@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 3269009013141069198}
   - component: {fileID: 3269009013141069193}
   - component: {fileID: 3269009013141069192}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Butt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
