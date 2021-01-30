@@ -21,10 +21,10 @@ public class HoleContentsCheck : MonoBehaviour
     {
         if (other.gameObject.GetComponent<RatMovement>()) {
             rat = other.gameObject.GetComponent<RatMovement>();
-            //if (rat.marble != null) {
+            if (rat.marble != null) {
 
-            //    marble = rat.marble;
-            //}
+                marble = rat.marble;
+            }
         }
     }
 }
