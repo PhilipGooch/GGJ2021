@@ -4368,6 +4368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7166648066444166492, guid: e1f27f94ade7b904dad78d3c9968e356, type: 3}
+      propertyPath: speed
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 7166648066444166495, guid: e1f27f94ade7b904dad78d3c9968e356, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4378,7 +4382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7166648066444166495, guid: e1f27f94ade7b904dad78d3c9968e356, type: 3}
       propertyPath: m_LocalScale.y
-      value: 12
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7166648066444166495, guid: e1f27f94ade7b904dad78d3c9968e356, type: 3}
       propertyPath: m_LocalScale.z
@@ -4390,7 +4394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7166648066444166495, guid: e1f27f94ade7b904dad78d3c9968e356, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.2
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7166648066444166495, guid: e1f27f94ade7b904dad78d3c9968e356, type: 3}
       propertyPath: m_LocalPosition.z

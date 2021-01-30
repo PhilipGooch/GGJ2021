@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController controller;
 
-    float speed = 12f;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
