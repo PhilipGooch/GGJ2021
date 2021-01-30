@@ -15,12 +15,13 @@ public class InGameManager : MonoBehaviour
     public Text countdownText;
     public Text livesText;
 
-    //public int phase = 0;
+    public RatManager ratManager;
 
     public List<GameObject> marbles = new List<GameObject>();
 
     public int currentMarble = 0;
     public PlayerHoleSelection selection;
+    public BoxContainer boxContainer;
 
     int score = 0;
     int lives = 3;
@@ -64,6 +65,7 @@ public class InGameManager : MonoBehaviour
         roundNum++;
         marblesInRound++;
         livesText.text = "Lives: " + lives.ToString();
+        boxContainer.PopulateBox();
         phase = PHASE.WAIT;
         // tell the rats to go to for marbles...reachedbox = false  
     }
@@ -78,7 +80,9 @@ public class InGameManager : MonoBehaviour
         // check if game ready to start
         if (currentTime > startTime)
         {
-            gameStarted = true;
+            //gameStarted = true;
+            ratManager.ResetRats();
+            ratManager.ReleaseRats();
             countdownText.text = " ";
             roundInfoText.text = "Round: " + roundNum.ToString();
             phase = PHASE.GAME;
@@ -103,7 +107,9 @@ public class InGameManager : MonoBehaviour
         if (currentMarble == marblesInRound)
         {
             phase = PHASE.START;
+            return;
         }
+
         if (lives > 0)
         {
             roundInfoText.text = "Find the " + marbles[currentMarble].name + " Marble!";
@@ -115,11 +121,14 @@ public class InGameManager : MonoBehaviour
                 if (selcted.GetComponent<HoleContentsCheck>().marble)
                 {
                     // check the holes marble with the current marble
-                    if (selcted.GetComponent<HoleContentsCheck>().marble.name == marbles[currentMarble].name)
+                    if (selcted.GetComponent<HoleContentsCheck>().marble.name == marbles[currentMarble].name +"(Clone)")
                     {
                         // selected right marble
-                        score++;
-                        currentMarble++;
+                        if (currentMarble < marbles.Count)
+                        {
+                            score++;
+                            currentMarble++;
+                        }
                     }
                     // the hole has the wrong marble
                     else
@@ -140,6 +149,6 @@ public class InGameManager : MonoBehaviour
             SceneManager.LoadScene("MenuScreen");
         }
 
-        
+       
     }
 }

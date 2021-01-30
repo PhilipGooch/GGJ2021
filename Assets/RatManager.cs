@@ -33,10 +33,26 @@ public class RatManager : MonoBehaviour
                 {
                     RatMovement ratMovement = rats[ratID].GetComponent<RatMovement>();
                     ratMovement.navAgent.SetDestination(ratMovement.boxPosition);
-                    nextRelease += 1;
+                    nextRelease += delay;
                     ratID++;
                 }
             }
         }
     }
+    public void ResetRats()
+    {
+        ratID = 0;
+        released = false;
+        timer = 0;
+        nextRelease = 0;
+        for(int i = 0; i < 11; i++)
+        {
+            RatMovement ratMovement = rats[i].GetComponent<RatMovement>();
+            Destroy(ratMovement.marble, 0f);
+        }
+    }
+
+
+    //To Do:
+    //check all rats get back - to set game manger to next phase
 }

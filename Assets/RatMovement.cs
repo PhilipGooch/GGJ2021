@@ -72,7 +72,7 @@ public class RatMovement : MonoBehaviour
                 marble = box.marbles[random];
                 box.marbles.RemoveAt(random);
 
-                Instantiate(marble, marbleMount.transform);
+                marble = Instantiate(marble, marbleMount.transform);
             }
         }
 
