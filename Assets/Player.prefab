@@ -144,11 +144,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 7044e68c27b9ace4b88b8c1c811d343e, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -263,6 +263,7 @@ MonoBehaviour:
   audioSource: {fileID: 327870936}
   ratLaugh: {fileID: 8300000, guid: 93e692c6a391c124d90c452ed6ee5431, type: 3}
   ratRejection: {fileID: 8300000, guid: 4225e21779414f2418012d157b55882e, type: 3}
+  ratVictory: {fileID: 8300000, guid: 066547d9ddce7f04a8d141ce3134679b, type: 3}
 --- !u!1 &7166648067876134802
 GameObject:
   m_ObjectHideFlags: 0
