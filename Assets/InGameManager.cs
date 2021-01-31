@@ -16,6 +16,7 @@ public class InGameManager : MonoBehaviour
     public Text livesText;
 
     public RatManager ratManager;
+    public RatAudioFeedback audioFeedback;
 
     public List<GameObject> marbles = new List<GameObject>();
 
@@ -67,7 +68,7 @@ public class InGameManager : MonoBehaviour
         marblesInRound++;
         livesText.gameObject.SetActive(false);
         livesText.text = "Lives: " + lives.ToString();
-        boxContainer.PopulateBox();
+        boxContainer.PopulateBox(marblesInRound);
         phase = PHASE.WAIT;
         // tell the rats to go to for marbles...reachedbox = false  
     }
@@ -130,6 +131,7 @@ public class InGameManager : MonoBehaviour
                         // selected right marble
                         if (currentMarble < marbles.Count)
                         {
+                            audioFeedback.RatComment(true);
                             score++;
                             currentMarble++;
                         }
@@ -137,6 +139,7 @@ public class InGameManager : MonoBehaviour
                     // the hole has the wrong marble
                     else
                     {
+                        audioFeedback.RatComment(false);
                         lives--;
                         livesText.text = "Lives: " + lives.ToString();
                         
@@ -144,6 +147,8 @@ public class InGameManager : MonoBehaviour
                 }
                 // the hole has no marble
                 else {
+
+                    audioFeedback.RatComment(false);
                     lives--;
                     livesText.text = "Lives: " + lives.ToString();
                 }
