@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 243671609}
   - component: {fileID: 243671611}
   - component: {fileID: 243671610}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Countdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 532791564}
   - component: {fileID: 532791566}
   - component: {fileID: 532791565}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Lives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 684539504}
   - component: {fileID: 684539503}
   - component: {fileID: 684539502}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1589,7 +1589,7 @@ GameObject:
   - component: {fileID: 921571328}
   - component: {fileID: 921571327}
   - component: {fileID: 921571326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1701,7 +1701,7 @@ Transform:
   m_GameObject: {fileID: 996657502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 100, y: 50, z: 100}
   m_Children: []
   m_Father: {fileID: 1881019822}
   m_RootOrder: 0
@@ -2195,7 +2195,7 @@ GameObject:
   - component: {fileID: 1298543291}
   - component: {fileID: 1298543290}
   - component: {fileID: 1298543289}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2639,7 +2639,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: fa89e7ff38593c64aaebac9e8e1cffcb, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: cf77fd298bd55f8438e0026dc6c97635, type: 2}
 --- !u!4 &1428577292
 Transform:
   m_ObjectHideFlags: 0
@@ -2723,7 +2723,7 @@ GameObject:
   - component: {fileID: 1493292692}
   - component: {fileID: 1493292694}
   - component: {fileID: 1493292693}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: RoundInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3620,7 +3620,7 @@ GameObject:
   - component: {fileID: 2019626257}
   - component: {fileID: 2019626256}
   - component: {fileID: 2019626255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3862,7 +3862,7 @@ GameObject:
   - component: {fileID: 2045076876}
   - component: {fileID: 2045076875}
   - component: {fileID: 2045076874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
