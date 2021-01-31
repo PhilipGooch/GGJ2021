@@ -64,6 +64,7 @@ public class InGameManager : MonoBehaviour
         roundInfoText.text = "Round Starts: ";
         roundNum++;
         marblesInRound++;
+        livesText.gameObject.SetActive(false);
         livesText.text = "Lives: " + lives.ToString();
         boxContainer.PopulateBox();
         phase = PHASE.WAIT;
@@ -106,10 +107,12 @@ public class InGameManager : MonoBehaviour
 
         if (currentMarble == marblesInRound)
         {
+            
             phase = PHASE.START;
             return;
         }
 
+        livesText.gameObject.SetActive(true);
         if (lives > 0)
         {
             roundInfoText.text = "Find the " + marbles[currentMarble].name + " Marble!";
