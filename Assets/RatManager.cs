@@ -64,6 +64,21 @@ public class RatManager : MonoBehaviour
         }
     }
 
+    public bool allRatsReturned()
+    {
+        bool allReturned = true;
+        for(int i = 0; i < 11; i++)
+        {
+            RatMovement ratMovement = rats[i].GetComponent<RatMovement>();
+            if (!ratMovement.returned)
+            {
+                allReturned = false;
+                break;
+            }
+        }
+        return allReturned;
+    }
+
 
     //To Do:
     //check all rats get back - to set game manger to next phase
