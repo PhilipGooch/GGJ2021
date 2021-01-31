@@ -190,7 +190,7 @@ public class InGameManager : MonoBehaviour
             }
         }
         else {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("LoseScreen");
         }
 
        
