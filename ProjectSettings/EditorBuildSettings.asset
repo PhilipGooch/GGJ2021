@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Phil 2.unity
     guid: a087e543770d38a41ace06d761adc535
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+    guid: 5c6c108e8e7c7fa4ea5ad057335ec5af
   m_configObjects: {}

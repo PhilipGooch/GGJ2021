@@ -60,6 +60,7 @@ public class InGameManager : MonoBehaviour
     void RoundStart() {
 
         currentTime = 0;
+        currentMarble = 0;
         countdownText.text = (startTime - (int)currentTime).ToString();
         roundInfoText.text = "Round Starts: ";
         roundNum++;

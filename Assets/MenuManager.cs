@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviour
     }
     public void OnHelpButtonClick()
     {
-        SceneManager.LoadScene("Phil");
+        SceneManager.LoadScene("Help");
     }
     public void OnQuitButtonClick()
     {

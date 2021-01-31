@@ -382,7 +382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 130}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &532791565
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -422,7 +422,8 @@ MonoBehaviour:
     the holes in the walls \nto take a marble from the box in the centre\nbefore
     returning to a hole in the wall.\nThe player will then be asked \nto find a specific
     marble.\nThe player then can click on the hole they think\nmarble is in.\nIf
-    they are correct they are asked for the next\n marble or the next round begins"
+    they are correct they are asked for the next\n marble or the next round begins.\nIf
+    they incorrect, the player loses a life.\nLose all lives and the game is over."
 --- !u!222 &532791566
 CanvasRenderer:
   m_ObjectHideFlags: 0

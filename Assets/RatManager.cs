@@ -60,6 +60,8 @@ public class RatManager : MonoBehaviour
         for(int i = 0; i < 11; i++)
         {
             RatMovement ratMovement = rats[i].GetComponent<RatMovement>();
+            ratMovement.reachedBox = false;
+            ratMovement.returned = false;
             Destroy(ratMovement.marble, 0f);
         }
     }

@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a6e400d54673944b61703af3d0c9b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 5
+  startTime: 0
   currentTime: 0
   gameStarted: 0
   roundNum: 0
@@ -2689,6 +2689,7 @@ MonoBehaviour:
   - {fileID: 1696298876}
   delay: 0.5
   timer: 0
+  ratIDs: 
 --- !u!4 &1434176837
 Transform:
   m_ObjectHideFlags: 0
