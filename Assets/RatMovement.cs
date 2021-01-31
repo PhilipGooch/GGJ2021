@@ -14,12 +14,14 @@ public class RatMovement : MonoBehaviour
     private BoxContainer box;
     public GameObject marble;
     public GameObject marbleMount;
-
+    public bool returned;
     InGameManager gameManager;
-    bool reachedBox = false;
+    public bool reachedBox = false;
 
     void Start()
     {
+        returned = false;
+
         box = FindObjectOfType<BoxContainer>();
 
         boxPosition = Vector3.zero;

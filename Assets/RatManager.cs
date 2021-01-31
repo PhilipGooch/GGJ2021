@@ -10,7 +10,9 @@ public class RatManager : MonoBehaviour
 
     public float timer = 0;
     private bool released = false;
-    private int ratID = 0;
+    private int ratIDIndex = 0;
+    private List<int> possibleRatIDs = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    public List<int> ratIDs = new List<int>();
 
     void Start()
     {
@@ -19,29 +21,39 @@ public class RatManager : MonoBehaviour
 
     public void ReleaseRats()
     {
+        possibleRatIDs = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        ratIDs = new List<int>();
+
+        for (int i = 0; i < 11; i++)
+        {
+            int random = Random.Range(0, possibleRatIDs.Count);
+            ratIDs.Add(possibleRatIDs[random]);
+            possibleRatIDs.RemoveAt(random);
+        }
         released = true;
     }
 
     void Update()
     {
+        
         if (released)
         {
             timer += Time.deltaTime;
             if (timer > nextRelease)
             {
-                if (ratID < 11)
+                if (ratIDIndex < 11)
                 {
-                    RatMovement ratMovement = rats[ratID].GetComponent<RatMovement>();
+                    RatMovement ratMovement = rats[ratIDs[ratIDIndex]].GetComponent<RatMovement>();
                     ratMovement.navAgent.SetDestination(ratMovement.boxPosition);
                     nextRelease += delay;
-                    ratID++;
+                    ratIDIndex++;
                 }
             }
         }
     }
     public void ResetRats()
     {
-        ratID = 0;
+        ratIDIndex = 0;
         released = false;
         timer = 0;
         nextRelease = 0;
@@ -50,6 +62,21 @@ public class RatManager : MonoBehaviour
             RatMovement ratMovement = rats[i].GetComponent<RatMovement>();
             Destroy(ratMovement.marble, 0f);
         }
+    }
+
+    public bool allRatsReturned()
+    {
+        bool allReturned = true;
+        for(int i = 0; i < 11; i++)
+        {
+            RatMovement ratMovement = rats[i].GetComponent<RatMovement>();
+            if (!ratMovement.returned)
+            {
+                allReturned = false;
+                break;
+            }
+        }
+        return allReturned;
     }
 
 

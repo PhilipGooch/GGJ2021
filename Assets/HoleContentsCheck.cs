@@ -21,8 +21,11 @@ public class HoleContentsCheck : MonoBehaviour
     {
         if (other.gameObject.tag == "Rat") {
             rat = other.gameObject.GetComponent<RatMovement>();
+            if (rat.reachedBox)
+            {
+                rat.returned = true;
+            }
             if (rat.marble != null) {
-
                 marble = rat.marble;
             }
         }

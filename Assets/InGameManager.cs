@@ -97,7 +97,7 @@ public class InGameManager : MonoBehaviour
     void GamePhase() {
 
         // Debug for checking the round start code works... change this to be called after rats rturn to holes
-        if (currentTime > 20)
+        if (ratManager.allRatsReturned())
         {
             phase = PHASE.SELECTION;
         }
