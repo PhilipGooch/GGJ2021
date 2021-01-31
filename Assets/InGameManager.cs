@@ -150,7 +150,7 @@ public class InGameManager : MonoBehaviour
             }
         }
         else {
-            SceneManager.LoadScene("MenuScreen");
+            SceneManager.LoadScene("Menu");
         }
 
        
