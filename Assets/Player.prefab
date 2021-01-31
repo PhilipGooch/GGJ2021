@@ -263,6 +263,7 @@ MonoBehaviour:
   audioSource: {fileID: 327870936}
   ratLaugh: {fileID: 8300000, guid: 93e692c6a391c124d90c452ed6ee5431, type: 3}
   ratRejection: {fileID: 8300000, guid: 4225e21779414f2418012d157b55882e, type: 3}
+  ratVictory: {fileID: 8300000, guid: 066547d9ddce7f04a8d141ce3134679b, type: 3}
 --- !u!1 &7166648067876134802
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,11 @@ public class RatAudioFeedback : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip ratLaugh;
     [SerializeField] private AudioClip ratRejection;
+    [SerializeField] private AudioClip ratVictory;
+    public void RatRegards()
+    {
+        audioSource.PlayOneShot(ratVictory);
+    }
     public void RatComment(bool correctRat)
     {
         if (correctRat)
