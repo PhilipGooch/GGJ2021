@@ -35,7 +35,15 @@ public class PlayerHoleSelection : MonoBehaviour
                 if (selectedHole.GetComponent<HoleContentsCheck>())
                 {
                     // check if the selected hole has a rat with the desired marble
-                    marble = selectedHole.GetComponent<HoleContentsCheck>().marble;
+
+                    HoleContentsCheck holeContentsCheck = selectedHole.GetComponent<HoleContentsCheck>();
+
+                    marble = holeContentsCheck.marble;
+
+                    RatMovement rat = holeContentsCheck.rat;
+
+                    rat.navAgent.SetDestination(rat.innerHolePositions[rat.end]);
+
                     return selectedHole;
                 }
             }

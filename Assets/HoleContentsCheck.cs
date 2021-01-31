@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HoleContentsCheck : MonoBehaviour
 {
-    RatMovement rat;
+    public RatMovement rat;
     public GameObject marble;
     // Start is called before the first frame update
     void Start()
