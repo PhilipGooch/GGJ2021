@@ -26,7 +26,7 @@ public class InGameManager : MonoBehaviour
 
     int score = 0;
     int lives = 3;
-    int marblesInRound = 1;
+    int marblesInRound = 5;
 
     enum PHASE {START, WAIT, GAME, SELECTION };
     PHASE phase;
@@ -117,6 +117,29 @@ public class InGameManager : MonoBehaviour
         livesText.gameObject.SetActive(true);
         if (lives > 0)
         {
+            switch (marbles[currentMarble].name)
+            {
+                case "Red":
+                    roundInfoText.color = Color.red;
+                    break;
+                case "Green":
+                    roundInfoText.color = Color.green;
+                    break;
+                case "Blue":
+                    roundInfoText.color = Color.blue;
+                    break;
+                case "Yellow":
+                    roundInfoText.color = Color.yellow;
+                    break;
+                case "Cyan":
+                    roundInfoText.color = Color.cyan;
+                    break;
+                case "Majenta":
+                    roundInfoText.color = Color.magenta;
+                    break;
+            }
+
+            
             roundInfoText.text = "Find the " + marbles[currentMarble].name + " Marble!";
 
             GameObject selcted = selection.PlayerChoice();
@@ -134,6 +157,12 @@ public class InGameManager : MonoBehaviour
                             audioFeedback.RatComment(true);
                             score++;
                             currentMarble++;
+                            selection.MoveSelectedRat();
+                        }
+                        if(currentMarble >= marbles.Count)
+                        {
+                            SceneManager.LoadScene("Win");
+                            return;
                         }
                     }
                     // the hole has the wrong marble
