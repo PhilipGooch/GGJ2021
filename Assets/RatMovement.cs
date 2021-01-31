@@ -74,6 +74,10 @@ public class RatMovement : MonoBehaviour
             reachedBox = true;
             navAgent.SetDestination(holePositions[end]);
         }
+        if (other.gameObject.tag == "Inner Hidy Hole")
+        {
+            navAgent.SetDestination(holePositions[end]);
+        }
     }
     void TakeMarble()
     {

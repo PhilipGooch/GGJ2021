@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - Wall
   - Box
+  - Inner Hidy Hole
   layers:
   - Default
   - TransparentFX

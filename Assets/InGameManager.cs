@@ -185,6 +185,7 @@ public class InGameManager : MonoBehaviour
                     audioFeedback.RatComment(false);
                     lives--;
                     livesText.text = "Lives: " + lives.ToString();
+                    selection.MoveSelectedRat();
                 }
             }
         }
