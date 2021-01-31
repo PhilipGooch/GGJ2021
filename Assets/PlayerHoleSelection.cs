@@ -42,12 +42,19 @@ public class PlayerHoleSelection : MonoBehaviour
 
                     RatMovement rat = holeContentsCheck.rat;
 
-                    rat.navAgent.SetDestination(rat.innerHolePositions[rat.end]);
+                
 
                     return selectedHole;
                 }
             }
         }
         return null;
+    }
+
+    public void MoveSelectedRat()
+    {
+        HoleContentsCheck holeContentsCheck = selectedHole.GetComponent<HoleContentsCheck>();
+        RatMovement rat = holeContentsCheck.rat;
+        rat.navAgent.SetDestination(rat.innerHolePositions[rat.end]);
     }
 }
