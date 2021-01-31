@@ -18,7 +18,7 @@ public class InGameManager : MonoBehaviour
     public RatManager ratManager;
     public RatAudioFeedback audioFeedback;
 
-    public List<GameObject> marbles = new List<GameObject>();
+    public List<GameObject> marbles;
 
     public int currentMarble = 0;
     public PlayerHoleSelection selection;
@@ -26,7 +26,7 @@ public class InGameManager : MonoBehaviour
 
     int score = 0;
     int lives = 3;
-    int marblesInRound = 5;
+    int marblesInRound = 1;
 
     enum PHASE {START, WAIT, GAME, SELECTION };
     PHASE phase;
@@ -59,7 +59,7 @@ public class InGameManager : MonoBehaviour
     }
 
     void RoundStart() {
-
+        roundInfoText.color = Color.black;
         currentTime = 0;
         currentMarble = 0;
         countdownText.text = (startTime - (int)currentTime).ToString();
@@ -69,6 +69,11 @@ public class InGameManager : MonoBehaviour
         livesText.gameObject.SetActive(false);
         livesText.text = "Lives: " + lives.ToString();
         boxContainer.PopulateBox(marblesInRound);
+        marbles.Clear();
+        for(int i = 0; i < boxContainer.marbles.Count; i++)
+        {
+            marbles.Add(boxContainer.marbles[i]);
+        }
         phase = PHASE.WAIT;
         // tell the rats to go to for marbles...reachedbox = false  
     }
@@ -152,14 +157,14 @@ public class InGameManager : MonoBehaviour
                     if (selcted.GetComponent<HoleContentsCheck>().marble.name == marbles[currentMarble].name +"(Clone)")
                     {
                         // selected right marble
-                        if (currentMarble < marbles.Count)
+                        if (currentMarble < 6)
                         {
                             audioFeedback.RatComment(true);
                             score++;
                             currentMarble++;
                             selection.MoveSelectedRat();
                         }
-                        if(currentMarble >= marbles.Count)
+                        if(currentMarble >= 6)
                         {
                             SceneManager.LoadScene("Win");
                             return;

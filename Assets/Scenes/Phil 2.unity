@@ -4674,5 +4674,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7306391713146593974, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
+      propertyPath: initialMarbles.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7306391713146593974, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
+      propertyPath: initialMarbles.Array.data[0]
+      value: 
+      objectReference: {fileID: 7054083683020022207, guid: a4ee4ab182b4f97458342daea2c1c5a8, type: 3}
+    - target: {fileID: 7306391713146593974, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
+      propertyPath: initialMarbles.Array.data[1]
+      value: 
+      objectReference: {fileID: 7054083683020022207, guid: 33719adc3fbedd04b82b231349c94f64, type: 3}
+    - target: {fileID: 7306391713146593974, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
+      propertyPath: initialMarbles.Array.data[2]
+      value: 
+      objectReference: {fileID: 7054083683020022207, guid: 1800b39864c19214d83129532b84ab13, type: 3}
+    - target: {fileID: 7306391713146593974, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
+      propertyPath: initialMarbles.Array.data[3]
+      value: 
+      objectReference: {fileID: 7054083683020022207, guid: 8da6d79de0d130f469af1903feb31cac, type: 3}
+    - target: {fileID: 7306391713146593974, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
+      propertyPath: initialMarbles.Array.data[4]
+      value: 
+      objectReference: {fileID: 7054083683020022207, guid: 283ca41da9d99484686ca02d74c4fba4, type: 3}
+    - target: {fileID: 7306391713146593974, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
+      propertyPath: initialMarbles.Array.data[5]
+      value: 
+      objectReference: {fileID: 7054083683020022207, guid: e78df6427fb1ac146a37b006548907b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aed693a7b3a54624992d4de2efd7b39e, type: 3}
